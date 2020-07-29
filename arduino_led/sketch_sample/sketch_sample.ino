@@ -24,13 +24,13 @@ void scrollDisplay ()
   int  messageOffset=0;
   while(1){
 
-    display.sendSmooth (message, messageOffset); // 酢黒＾るする文字をセットします
+    display.sendSmooth (message, messageOffset); // スクロールする文字をセットします
   
     // 文字を表示し終わったら終了します
     if (messageOffset++ >= (int) (strlen (message) * 8)){
       break;
     } 
-    delay(50UL);  // スクロールで動く速さ、100ミリ秒でスクロールする
+    delay(50UL);  // スクロールで動く速さ、50ミリ秒でスクロールする
   }
 }  // end of updateDisplay
 
